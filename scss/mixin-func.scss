@@ -1,0 +1,27 @@
+// general style of the header of each sections
+@mixin header-style($area) {
+    grid-area: $area;
+    font-family: $quickSand;
+    background-color: $pink;
+    div.header-style {
+        padding: 1.3rem 0;
+        text-align: center;
+        position: relative;
+        h2 {
+            text-transform: uppercase;
+            color: $peach;
+            font-size: 2.2rem;
+            margin: 1rem auto;
+            width: fit-content;
+            padding: 0.4rem 0.8rem;
+            border-bottom: 5px solid $white;
+        }
+    }
+}
+
+// general style for the content of each section
+@mixin content-style {
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem auto;
+}

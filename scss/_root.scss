@@ -1,0 +1,47 @@
+// Google Fonts and Persian Fonts
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+@import "/fonts/persian/IranNastaliq/persian-font.css";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+
+// Default & General margin and Padding
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+// Defining Root settings
+:root {
+  // Fluid Typography
+  font-size: calc(0.9vh + 0.1vw + 0.1rem);
+  // font family
+  font-family: $quickSand;
+}
+
+// Defining the Root Container
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60rem auto 32rem;
+  grid-template-areas: "head" "main-content" "foot";
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+}
+
+// all ancher tags
+a {
+  text-decoration: none;
+  color: $pink;
+}
+// all unordered list
+ul {
+  list-style-type: none;
+}
+
+// all sections
+section {
+  margin-top: 3rem;
+}
